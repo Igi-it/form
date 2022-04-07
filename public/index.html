@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registrace</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Celé Jméno</span>
+                    <input type="text" placeholder="Zadejte své jméno" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Uživatelské jméno</span>
+                    <input type="text" placeholder="Zadejte uiživatelské jméno" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Zadejte emailovou adresu" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Telefonní číslo</span>
+                    <input type="text" placeholder="Zadejte své tel. číslo" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Heslo</span>
+                    <input type="text" placeholder="Zadejte své heslo" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Potvrďte heslo</span>
+                    <input type="text" placeholder="Potvďte heslo" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <span class="gender-title">Pohlaví</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Muž</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Žena</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Registrace">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
