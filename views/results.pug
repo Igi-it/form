@@ -1,0 +1,21 @@
+html 
+    head 
+        title Výsledky hry
+        style
+            include css/styles.css
+    body
+        h1 #{nadpis}
+        table 
+            thead 
+                tr 
+                    th Jméno hráče 
+                    th Počet bodů
+                    th Datum 
+                    th Čas 
+            tbody 
+                each pl in players 
+                    tr 
+                        td  #{pl.player}        
+                        td  #{pl.points}
+                        td  #{pl.date}
+                        td  #{pl.time}

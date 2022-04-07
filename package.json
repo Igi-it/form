@@ -12,6 +12,10 @@
   "author": "igi",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
+    "body-parser": "^1.20.0",
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.3",
+    "moment": "^2.29.2",
+    "pug": "^3.0.2"
   }
 }
