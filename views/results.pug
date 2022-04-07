@@ -1,21 +1,24 @@
 html 
     head 
-        title Výsledky hry
+        title Seznam Uživatelů
+        link(rel='stylesheet'
+href='https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css')
         style
             include css/styles.css
     body
-        h1 #{nadpis}
-        table 
+        header.jumbotron-fluid.bg-primary.p-3
+h1.text-center.text-whiteh1 #{nadpis}
+        table(class="table talbe-striped")
             thead 
-                tr 
-                    th Jméno hráče 
-                    th Počet bodů
-                    th Datum 
-                    th Čas 
+                tr.text-center
+                    th Jméno
+                    th Heslo
+                    th Datum
+                    th Čas
             tbody 
                 each pl in players 
-                    tr 
-                        td  #{pl.player}        
-                        td  #{pl.points}
-                        td  #{pl.date}
-                        td  #{pl.time}
+                    tr.bg-dark.text-light.text-center
+                        td #{pl.username}        
+                        td #{pl.password}
+                        td #{pl.date}
+                        td #{pl.time}
